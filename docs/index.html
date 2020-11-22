@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <a class="navbar-brand" href="index.html">Welcome to Austin</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -33,131 +33,143 @@
   </div>
 </div>
 
-<h2>Things To See:</h2>
 <div class="card col-lg-8 offset-lg-2">
-  <img class="card-img-top img-fluid" src="../img/lady-bird-lake.jpg" alt="Card image cap">
+  <div class="card bg-dark text-white">
+    <img src="../img/lady-bird-lake.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h3 class="card-title text-center">Things To See</h3>
+    </div>
+  </div>
   <div class="card-body">
-    <ul class="list-group list-group-flush">
+    <ul class="list-group list-group-flush overflow-auto" style="height: 150px">
       
       <li class="list-group-item">The University of Texas
-        <small>Sightseeing, bowling, exploring museums, attending concerts</small>
+        <small class="float-right">Sightseeing, bowling, exploring museums, attending concerts</small>
       </li>
       
       <li class="list-group-item">The Texas State Capitol
-        <small>Free 30-minute tours, good food, biking and sightseeing</small>
+        <small class="float-right">Free 30-minute tours, good food, biking and sightseeing</small>
       </li>
       
       <li class="list-group-item">Lady Bird Lake
-        <small>Hiking, biking, running, kayaking and paddleboarding</small>
+        <small class="float-right">Hiking, biking, running, kayaking and paddleboarding</small>
       </li>
       
       <li class="list-group-item">Mount Bonnell
-        <small>Hiking, sightseeing</small>
+        <small class="float-right">Hiking, sightseeing</small>
       </li>
       
-      <li class="list-group-item"><a href="http://localhost:3000/landmarks.html">See More</a></li>
+      <li class="list-group-item"><a href="landmarks.html">See More</a></li>
     </ul>
   </div>
 </div>
 
-<h2>Things To Do:</h2>
 <div class="card col-lg-8 offset-lg-2">
-  <img class="card-img-top img-fluid" src="../img/cmc-austin-dawn.jpg" alt="Card image cap">
+  <div class="card bg-dark text-white">
+    <img src="../img/cmc-austin-dawn.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h3 class="card-title text-center">Things To Do</h3>
+    </div>
+  </div>
   <div class="card-body">
-    <ul class="list-group list-group-flush">
+    <ul class="list-group list-group-flush overflow-auto" style="height: 150px">
       
       <li class="list-group-item">Texas Farmer&#39;s Market at Mueller
-        <small>Sundays 10:00am – 2:00pm</small>
+        <small class="float-right">Sundays 10:00am – 2:00pm</small>
       </li>
       
       <li class="list-group-item">Community Night at the Thinkery
-        <small>Wednesdays 4:00pm – 8:00pm</small>
+        <small class="float-right">Wednesdays 4:00pm – 8:00pm</small>
       </li>
       
       <li class="list-group-item">Barton Springs Pool
-        <small>Year-round</small>
+        <small class="float-right">Year-round</small>
       </li>
       
       <li class="list-group-item">Kayaking Lady Bird Lake at the Rowing Dock
-        <small>Year-round</small>
+        <small class="float-right">Year-round</small>
       </li>
       
       <li class="list-group-item">See bats at the Congress Avenue Bridge
-        <small>Summer evenings</small>
+        <small class="float-right">Summer evenings</small>
       </li>
       
       <li class="list-group-item">The Pecan Street Festival
-        <small>Every spring and fall</small>
+        <small class="float-right">Every spring and fall</small>
       </li>
       
       <li class="list-group-item">See free concerts at The Blues on the Green
-        <small>Once a month throughout the summer</small>
+        <small class="float-right">Once a month throughout the summer</small>
       </li>
       
       <li class="list-group-item">Attend the South by Southwest Conference
-        <small>Annually in the spring</small>
+        <small class="float-right">Annually in the spring</small>
       </li>
       
-      <li class="list-group-item"><a href="http://localhost:3000/activities.html">See More</a></li>
+      <li class="list-group-item"><a href="activities.html">See More</a></li>
     </ul>
   </div>
 </div>
 
-<h2>Things To Eat:</h2>
 <div class="card col-lg-8 offset-lg-2">
-  <img class="card-img-top img-fluid" src="../img/cmc-austin-dawn.jpg" alt="Card image cap">
+  <div class="card bg-dark text-black">
+    <img src="../img/franklin-bbq.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h3 class="card-title text-center">Things To Eat</h3>
+    </div>
+  </div>
   <div class="card-body">
-    <ul class="list-group list-group-flush">
+    <ul class="list-group list-group-flush overflow-auto" style="height: 150px">
       
       <li class="list-group-item">Franklin Barbecue
-        <small>Barbecue</small>
+        <small class="float-right">Barbecue</small>
       </li>
       
       <li class="list-group-item">Home Slice Pizza
-        <small>Pizza</small>
+        <small class="float-right">Pizza</small>
       </li>
       
       <li class="list-group-item">Juan in a Million
-        <small>Tex-Mex</small>
+        <small class="float-right">Tex-Mex</small>
       </li>
       
       <li class="list-group-item">Launderette
-        <small>American</small>
+        <small class="float-right">American</small>
       </li>
       
       <li class="list-group-item">Oseyo
-        <small>Korean</small>
+        <small class="float-right">Korean</small>
       </li>
       
       <li class="list-group-item">Valentina&#39;s Tex Mex BBQ
-        <small>Tacos</small>
+        <small class="float-right">Tacos</small>
       </li>
       
       <li class="list-group-item">The Peached Tortilla
-        <small>Asian fusion</small>
+        <small class="float-right">Asian fusion</small>
       </li>
       
       <li class="list-group-item">Patrizi&#39;s
-        <small>Italian</small>
+        <small class="float-right">Italian</small>
       </li>
       
       <li class="list-group-item">Bufalina
-        <small>Pizza</small>
+        <small class="float-right">Pizza</small>
       </li>
       
       <li class="list-group-item">Via313
-        <small>Pizza</small>
+        <small class="float-right">Pizza</small>
       </li>
       
       <li class="list-group-item">Uchi
-        <small>Japanese</small>
+        <small class="float-right">Japanese</small>
       </li>
       
       <li class="list-group-item">888 Pan Asian Restaurant
-        <small>Pan-Asian</small>
+        <small class="float-right">Pan-Asian</small>
       </li>
       
-      <li class="list-group-item"><a href="http://localhost:3000/restaurants.html">See More</a></li>
+      <li class="list-group-item"><a href="restaurants.html">See More</a></li>
     </ul>
   </div>
 </div>
