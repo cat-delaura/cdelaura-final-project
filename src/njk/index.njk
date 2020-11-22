@@ -7,6 +7,49 @@
   </div>
 </div>
 
+<h2>Things To See:</h2>
+<div class="card col-lg-8 offset-lg-2">
+  <img class="card-img-top img-fluid" src="../img/lady-bird-lake.jpg" alt="Card image cap">
+  <div class="card-body">
+    <ul class="list-group list-group-flush">
+      {% for toSee in austin.landmarks%}
+      <li class="list-group-item">{{ toSee.name }}
+        <small>{{ toSee.activities }}</small>
+      </li>
+      {% endfor %}
+      <li class="list-group-item"><a href="http://localhost:3000/landmarks.html">See More</a></li>
+    </ul>
+  </div>
+</div>
 
+<h2>Things To Do:</h2>
+<div class="card col-lg-8 offset-lg-2">
+  <img class="card-img-top img-fluid" src="../img/cmc-austin-dawn.jpg" alt="Card image cap">
+  <div class="card-body">
+    <ul class="list-group list-group-flush">
+      {% for toDo in austin.activities%}
+      <li class="list-group-item">{{ toDo.activity }}
+        <small>{{ toDo.date_time }}</small>
+      </li>
+      {% endfor %}
+      <li class="list-group-item"><a href="http://localhost:3000/activities.html">See More</a></li>
+    </ul>
+  </div>
+</div>
+
+<h2>Things To Eat:</h2>
+<div class="card col-lg-8 offset-lg-2">
+  <img class="card-img-top img-fluid" src="../img/cmc-austin-dawn.jpg" alt="Card image cap">
+  <div class="card-body">
+    <ul class="list-group list-group-flush">
+      {% for toEat in restaurants.restaurants%}
+      <li class="list-group-item">{{ toEat.name }}
+        <small>{{ toEat.category }}</small>
+      </li>
+      {% endfor %}
+      <li class="list-group-item"><a href="http://localhost:3000/restaurants.html">See More</a></li>
+    </ul>
+  </div>
+</div>
 
 {% endblock %}
