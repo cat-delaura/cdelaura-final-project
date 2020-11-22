@@ -1,0 +1,22 @@
+{% extends '_templates/base.njk' %}
+
+{% set relative_path = "../" %}
+
+{% block content %}
+<article class="container">
+  <h1>Landmarks of Austin</h1>
+  <p>Intro text here.</p>
+  <div class="row">
+    {% for landmark in austin.landmarks %}
+    <div class="card mb-3 col-sm-6 col-lg-4">
+      <img src="../img/{{ landmark.imagebw }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{ landmark.name }}<small class="text-muted">{{ landmark.established }}</small></h5>
+        <p class="card-text">{{ landmark.description | safe }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</article>
+{% endblock %}

@@ -1,14 +1,14 @@
 {
   "files": [
     {
-      "fileId": "1RgMhjtkXlbbf9uzSzy_xPRKwxcVZIZqVytgM_JoU4E4",
-      "type": "doc",
-      "name": "library"
+      "fileId": "1z_Q82xxtltzANj2veLGXBZV_QPJEyCCaNWU6FnTOwb4",
+      "type": "sheet",
+      "name": "austin"
     },
     {
-      "fileId": "1gDwO-32cgpBDn_0niV0iu6TqQTaRDr4nmSqnT53magY",
-      "type": "sheet",
-      "name": "bookstores"
+      "fileId": "1EsRTL-JyJ-n4XiOc5z-r05Hac_OE2GfFaQBo1m8jn3g",
+      "type": "doc",
+      "name": "restaurants"
     }
   ],
   "to_bake": [
@@ -18,6 +18,13 @@
       "array": "books",
       "slug": "slug",
       "path": "books"
+    },
+    {
+      "template": "bake-landmarks",
+      "data": "austin",
+      "array": "landmarks",
+      "slug": "slug",
+      "path": "landmark"
     }
   ]
 }

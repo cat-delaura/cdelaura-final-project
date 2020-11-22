@@ -1,0 +1,20 @@
+{% extends '_templates/base.njk' %}
+
+{% set relative_path = "../" %}
+
+{% block content %}
+
+<div class="list-group list-group-flush">
+  {% for toDo in austin.activities %}
+  <div class="list-group-item list-group-item-action col-lg-6 offset-lg-3">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">{{ toDo.activity }}</h5>
+    </div>
+    <p class="mb-1">When: {{ toDo.date_time }}</p>
+    <p class="mb-1">Where: {{ toDo.address }}</p>
+    <a href="{{ toDo.url }}" target="_blank">Learn More</a>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}
