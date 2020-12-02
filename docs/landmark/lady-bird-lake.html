@@ -8,18 +8,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="../css/main.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+</style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="../index.html">Welcome to Austin</a>
+
+  <a class="navbar-brand" id="howdy" href="../index.html">Howdy</a>
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <a class="nav-link navbar-nav" href="../landmarks.html">See</a>
-    <a class="nav-link navbar-nav" href="../activities.html">Do</a>
-    <a class="nav-link navbar-nav" href="../restaurants.html">Eat</a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../landmarks.html" >Explore</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../activities.html">Play</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../restaurants.html">Eat</a>
+      </li>
+    </ul>
   </div>
+  
 </nav>
 
     <div class="jumbotron banner text-center">
@@ -27,23 +42,54 @@
 </div>
 
     
-  <article class="container">
-    <div class="row">
-      <div class="col-sm-10">
-        <img src="../img/lady-bird-lake.jpg" alt="" class="img-fluid mb-4">
-        <h1>Lady Bird Lake <small class="text-muted">Established 1960</small></h1>
-        <h2>Hiking, biking, running, kayaking and paddleboarding</h2>
+<header>
+  <h2 class="text-center">Lady Bird Lake</h2>
+  <p class="text-center">
+    <small class="text-muted">Established 1960</small>
+  </p>
+</header>
+
+<article class="container">
+  <div class="row">
+
+    <div class="col-md-5 col-sm-12">
+      <img src="../img/lady-bird-lake.jpg" alt="..." class="img-fluid mb-4 mt-4">
+    </div>
+
+    <aside class="mt-4">
+      <div>
+        <h3>Hiking, biking, running, kayaking and paddleboarding</h3>
+        <p>Adress: 1200 W Cesar Chavez St, Austin, TX 78703</p>
+        <a class="btn btn-outline-dark float-right" href="https://austintexas.gov/page/lady-bird-lake" role="button">See More</a>
       </div>
-      <div class="col-sm-2">
-        <img src="../img/lady-bird-lake-bw.jpg" alt="..." class="img-fluid">
-      </div>
-      <div class="col-sm-8">
-        <p><p>Lady Bird Lake (formerly, and still colloquially referred to as Town Lake) is a river-like reservoir on the Colorado River in Austin, Texas, United States. The City of Austin created the reservoir in 1960 as a cooling pond for a new city power plant. The lake, which has a surface area of 416 acres (168 ha), is now used primarily for recreation and flood control. The reservoir is named in honor of former First Lady of the United States Lady Bird Johnson.</p>
+    </aside>
+
+  </div>
+
+</article>
+
+<section class="container">
+
+  <p class="col-md-8 mt-4">
+    <a class="btn btn-outline-dark" data-toggle="collapse" href="#multiCollapseInfo" role="button" aria-expanded="false" aria-controls="multiCollapseInfo">Details</a>
+  </p>
+
+  <div class="row">
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseInfo">
+        <div class="card card-body">
+          <p><p>Lady Bird Lake (formerly, and still colloquially referred to as Town Lake) is a river-like reservoir on the Colorado River in Austin, Texas, United States. The City of Austin created the reservoir in 1960 as a cooling pond for a new city power plant. The lake, which has a surface area of 416 acres (168 ha), is now used primarily for recreation and flood control. The reservoir is named in honor of former First Lady of the United States Lady Bird Johnson.</p>
 <p>Lady Bird Lake is a major recreation area for the City of Austin. The lake's banks are bounded by the Ann and Roy Butler Hike-and-Bike Trail, and businesses offer recreational watercraft services along the lakefront portion of the trail. Austin's largest downtown park, Zilker Park, is adjacent to the lake, and Barton Springs, a major attraction for swimmers, flows into the lake.</p>
 <p>- Source: <a href="https://en.wikipedia.org/wiki/Lady_Bird_Lake">Wikipedia</a></p></p>
-        <small> 1200 W Cesar Chavez St, Austin, TX 78703</small>
+        <div class>
+          <img src="../img/lady-bird-lake-bw.jpg" alt="..." class="img-thumbnail float-right">
+        </div>
+        </div>
+      </div>
     </div>
-  </article>
+  </div>
+
+</section>
 
 
     <footer>

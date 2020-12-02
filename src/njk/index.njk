@@ -1,67 +1,85 @@
 {% extends '_templates/base.njk' %}
 
 {% block content %}
-<div class="container">
-  <div class="col-sm-12 col-md-10 col-lg-8 offset-md-2 offset-lg-2">
+<header> 
+  <div class="text-center col-sm-12 col-md-10 col-lg-8 offset-md-1 offset-lg-2">
     <p>Content goes here: some gibberish talking about Austin. Probably goes on for a while talking about how great this city is, how much there is to do and explore. all the live music and the parks and the swimming holes, and lordy! let's not forget the tacos. We've got to dedicate at least a sentence to those Austin Tacos.</p>
   </div>
-</div>
+</header>
 
-<div class="card col-lg-8 offset-lg-2">
-  <div class="card bg-dark text-white">
-    <img src="../img/lady-bird-lake.jpg" class="card-img" alt="...">
-    <div class="card-img-overlay">
-      <h3 class="card-title text-center">Things To See</h3>
+<div class="container mb-4" id="indexPage">
+  <a href="landmarks.html"><img src="../img/mount-bonnell.jpg" alt="..." style="height: 100%; width: 100%;"></a>
+  <div class="text-block">
+    <h4>Explore Austin<h4>
+      <p>Historic buildings. Natural wonders.<p>
+  </div>
+</div> 
+
+<div class="container mb-4" id="indexPage">
+  <a href="activities.html"><img src="../img/lady-bird-lake.jpg" alt="..." style="height: 100%; width: 100%"></a>
+  <div class="text-block">
+    <h4>Play in Austin<h4>
+      <p>Historic buildings. Natural wonders. Austin has much to offer.<p>
+  </div>
+</div> 
+
+<div class="container mb-4"id="indexPage">
+  <a href="restaurants.html"><img src="../img/franklin-bbq.jpg" alt="..." style="height: 100%; width: 100%"></a>
+  <div class="text-block">
+    <h4>Eat in Austin<h4>
+      <p>Historic buildings. Natural wonders. Austin has much to offer.<p>
+  </div>
+</div> 
+
+
+<!--<div class="container">
+    <div class="col-sm-12 col-md-10 col-lg-8 offset-md-2 offset-lg-2">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="landmarks.html"> 
+        <img class="d-block w-100" src="../img/mount-bonnell.jpg" alt="view from the top of mount bonnell">
+      </a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Things to See</h5>
+        <p>...</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="activities.html">
+        <img class="d-block w-100" src="../img/lady-bird-lake.jpg" alt="kayakers on lady bird lake">
+      </a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Things to Do</h5>
+        <p>...</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="restaurants.html">
+        <img class="d-block w-100" src="../img/franklin-bbq.jpg" alt="Crowds waiting outside of Franklin bbq">
+      </a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Things to Eat</h5>
+        <p>...</p>
+      </div>
     </div>
   </div>
-  <div class="card-body">
-    <ul class="list-group list-group-flush overflow-auto" style="height: 150px">
-      {% for toSee in austin.landmarks%}
-      <li class="list-group-item">{{ toSee.name }}
-        <small class="float-right">{{ toSee.activities }}</small>
-      </li>
-      {% endfor %}
-      <li class="list-group-item"><a href="landmarks.html">See More</a></li>
-    </ul>
-  </div>
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
+</div>
+</div>-->
 
-<div class="card col-lg-8 offset-lg-2">
-  <div class="card bg-dark text-white">
-    <img src="../img/cmc-austin-dawn.jpg" class="card-img" alt="...">
-    <div class="card-img-overlay">
-      <h3 class="card-title text-center">Things To Do</h3>
-    </div>
-  </div>
-  <div class="card-body">
-    <ul class="list-group list-group-flush overflow-auto" style="height: 150px">
-      {% for toDo in austin.activities%}
-      <li class="list-group-item">{{ toDo.activity }}
-        <small class="float-right">{{ toDo.date_time }}</small>
-      </li>
-      {% endfor %}
-      <li class="list-group-item"><a href="activities.html">See More</a></li>
-    </ul>
-  </div>
-</div>
-
-<div class="card col-lg-8 offset-lg-2">
-  <div class="card bg-dark text-black">
-    <img src="../img/franklin-bbq.jpg" class="card-img" alt="...">
-    <div class="card-img-overlay">
-      <h3 class="card-title text-center">Things To Eat</h3>
-    </div>
-  </div>
-  <div class="card-body">
-    <ul class="list-group list-group-flush overflow-auto" style="height: 150px">
-      {% for toEat in restaurants.restaurants%}
-      <li class="list-group-item">{{ toEat.name }}
-        <small class="float-right">{{ toEat.category }}</small>
-      </li>
-      {% endfor %}
-      <li class="list-group-item"><a href="restaurants.html">See More</a></li>
-    </ul>
-  </div>
-</div>
 
 {% endblock %}
