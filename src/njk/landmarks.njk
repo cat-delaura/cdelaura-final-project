@@ -4,17 +4,25 @@
 
 {% block content %}
 
-<article class="container offset-4">
-  <h2>Landmarks of Austin</h2>
-  <p>Intro text here.</p>
-
-  {% for landmark in austin.landmarks %}
-  <div class="container landmark">
-    <h2>{{ landmark.name }}</h2>
-    <p>{{ landmark.activities }}</p>
-    <a class="btn btn-light mb-4" href="landmark/{{landmark.slug}}.html" target="_blank" role="button">Learn More</a>
+<article class="container">
+  
+  <div class="text-center mt-5 mb-4 p-4 pageTop">
+    <h2 class="pageTitle">Must-visit Attractions in Austin</h2>
+    <p>With an abundance of green spaces, historic buildings, museums and music venues, Austin has a little something to offer everyone.</p>
   </div>
-  {% endfor %}
+
+
+ <div class="list-group list-group-flush">
+  {% for landmark in austin.landmarks %}
+  <div class="container col-lg-6 offset-lg-3 mb-2 landmarkSection">
+    <div class="mt-4">
+      <h5>{{ landmark.name }}</h5>
+      <p>{{ landmark.activities }}</p>
+      <a class="btn btn-dark float-right mb-4" href="landmark/{{landmark.slug}}.html" target="_blank" role="button">Learn More</a>
+    </div>
+  </div>
+  {% endfor %} 
+</div>
 
 </article>
 {% endblock %}

@@ -11,6 +11,8 @@
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -42,11 +44,14 @@
 </div>
 
     
+
 <header>
-  <h2 class="text-center">Lady Bird Lake</h2>
+  <div class="container mt-5 mb-4 p-4 pageTop">
+  <h2 class="text-center pageTitle">Lady Bird Lake</h2>
   <p class="text-center">
     <small class="text-muted">Established 1960</small>
   </p>
+  </div>
 </header>
 
 <article class="container">
@@ -55,15 +60,14 @@
       <img src="../img/lady-bird-lake.jpg" alt="..." class="img-fluid mb-4 mt-4">
     </div>
 
-    <aside class="col-lg-4 col-md-6 mt-4">
-      <div>
-        <h3>Hiking, biking, running, kayaking and paddleboarding</h3>
+    <aside class="col-lg-4 col-md-6 mt-4 landmarkInfo">
+      <div class="mt-4">
+        <h5>Hiking, biking, running, kayaking and paddleboarding</h5>
         <p>Adress: 1200 W Cesar Chavez St, Austin, TX 78703</p>
         <a class="btn btn-outline-dark float-right" href="https://austintexas.gov/page/lady-bird-lake" target="_blank" role="button">See More</a>
       </div>
     </aside>
   </div>
-
 </article>
 
 <!-- additional info, hidden at first -->
@@ -75,23 +79,23 @@
   </p>
 
   <div class="container">
-      <div class="collapse multi-collapse" id="multiCollapseInfo">
+    <div class="collapse multi-collapse" id="multiCollapseInfo">
 
-          <div class="card card-body">
-            <div class="row">
-              <div class="col-lg-5">
-                <p><p>Lady Bird Lake (formerly, and still colloquially referred to as Town Lake) is a river-like reservoir on the Colorado River in Austin, Texas, United States. The City of Austin created the reservoir in 1960 as a cooling pond for a new city power plant. The lake, which has a surface area of 416 acres (168 ha), is now used primarily for recreation and flood control. The reservoir is named in honor of former First Lady of the United States Lady Bird Johnson.</p>
+      <div class="card card-body">
+        <div class="row">
+          <div class="col-lg-5">
+            <p><p>Lady Bird Lake (formerly, and still colloquially referred to as Town Lake) is a river-like reservoir on the Colorado River in Austin, Texas, United States. The City of Austin created the reservoir in 1960 as a cooling pond for a new city power plant. The lake, which has a surface area of 416 acres (168 ha), is now used primarily for recreation and flood control. The reservoir is named in honor of former First Lady of the United States Lady Bird Johnson.</p>
 <p>Lady Bird Lake is a major recreation area for the City of Austin. The lake's banks are bounded by the Ann and Roy Butler Hike-and-Bike Trail, and businesses offer recreational watercraft services along the lakefront portion of the trail. Austin's largest downtown park, Zilker Park, is adjacent to the lake, and Barton Springs, a major attraction for swimmers, flows into the lake.</p>
 <p>- Source: <a href="https://en.wikipedia.org/wiki/Lady_Bird_Lake">Wikipedia</a></p></p>
-              </div>
-
-              <div class="col-lg-7">
-                <img src="../img/lady-bird-lake-bw.jpg" alt="..." class="img-thumbnail float-right">
-              </div>
-            </div>
           </div>
 
+          <div class="col-lg-7">
+            <img src="../img/lady-bird-lake-bw.jpg" alt="..." class="img-thumbnail float-right">
+          </div>
+        </div>
       </div>
+
+    </div>
   </div>
 
 </section>
@@ -100,7 +104,7 @@
     <footer>
 <p id="legal" class="center-block text-center">
   <small>&copy; <span class="copyright-year"></span>
-  A class project by Cat DeLaura.
+  A class project by <a target="_blank" href="https://www.catdelaura.com/">Cat DeLaura.</a>
 </p>
 </footer>
 

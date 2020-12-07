@@ -9,11 +9,14 @@
 {% block page_description %}{{ name }}{% endblock %}
 
 {% block content %}
+
 <header>
-  <h2 class="text-center">{{ name }}</h2>
+  <div class="container mt-5 mb-4 p-4 pageTop">
+  <h2 class="text-center pageTitle">{{ name }}</h2>
   <p class="text-center">
     <small class="text-muted">{{ established }}</small>
   </p>
+  </div>
 </header>
 
 <article class="container">
@@ -22,15 +25,14 @@
       <img src="../img/{{ image}}" alt="..." class="img-fluid mb-4 mt-4">
     </div>
 
-    <aside class="col-lg-4 col-md-6 mt-4">
-      <div>
-        <h3>{{ activities }}</h3>
+    <aside class="col-lg-4 col-md-6 mt-4 landmarkInfo">
+      <div class="mt-4">
+        <h5>{{ activities }}</h5>
         <p>Adress: {{ location }}</p>
         <a class="btn btn-outline-dark float-right" href="{{ url }}" target="_blank" role="button">See More</a>
       </div>
     </aside>
   </div>
-
 </article>
 
 <!-- additional info, hidden at first -->
@@ -42,21 +44,21 @@
   </p>
 
   <div class="container">
-      <div class="collapse multi-collapse" id="multiCollapseInfo">
+    <div class="collapse multi-collapse" id="multiCollapseInfo">
 
-          <div class="card card-body">
-            <div class="row">
-              <div class="col-lg-5">
-                <p>{{ description | safe }}</p>
-              </div>
-
-              <div class="col-lg-7">
-                <img src="../img/{{ imagebw }}" alt="..." class="img-thumbnail float-right">
-              </div>
-            </div>
+      <div class="card card-body">
+        <div class="row">
+          <div class="col-lg-5">
+            <p>{{ description | safe }}</p>
           </div>
 
+          <div class="col-lg-7">
+            <img src="../img/{{ imagebw }}" alt="..." class="img-thumbnail float-right">
+          </div>
+        </div>
       </div>
+
+    </div>
   </div>
 
 </section>
