@@ -14,7 +14,7 @@
   <div class="card-columns">
     {% for restaurant in restaurants.restaurants %}
       <div class="card">
-        <img src="img/{{ restaurant.image }}" class="card-img-top img-fluid" alt="...">
+        <img class="card-img-top img-fluid" src="img/{{ restaurant.image }}" alt="...">
         <div class="card-body">
           <h5 class="card-title">{{ restaurant.name }}</h5>
           <p class="card-text">{{ restaurant.address }}</p>
