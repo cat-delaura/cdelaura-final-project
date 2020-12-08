@@ -1,6 +1,9 @@
 #indexPage {
   position: relative;
   padding: 60px;
+  border-bottom-color: black;
+  border-bottom-style: double;
+  border-bottom-width: thick;
 }
 
 .indexIntro {
@@ -20,7 +23,9 @@ img {
   z-index: -1;
 }
 
-#indexDescription {
-  font-size: 100px;
-  color: whitesmoke;
+.introText {
+  font-family: 'Playfair Display', serif;
+  border-bottom-color: black;
+  border-bottom-style: double;
+  border-bottom-width: thick;
 }
